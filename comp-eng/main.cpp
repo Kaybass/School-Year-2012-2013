@@ -52,30 +52,22 @@ int main(){
 	
 	if ( d + e <= 9 ){
 		int D = 22 + d + e;
-		cout << "The date is the ";
-		cout << D;
-		cout << " of March \n";
+		cout << "The date is the " << D << " of March \n";
 	}
 	
 	else if ( d == 29 && e == 6){
 		int D = 19;
-		cout << "The date is the ";
-		cout <<  D;
-		cout <<  " of April \n";
+		cout << "The date is the " <<  D <<  " of April \n";
 	}
 	
 	else if ( d == 28 && e == 6 && a > 10 ){
 		int D = 18;
-		cout << "The date is the ";
-		cout <<  D;
-		cout <<  " of April \n";
+		cout << "The date is the " <<  D <<  " of April \n";
 	}
 	
 	else{
 		int D = d + e - 9;
-		cout << "The date is the ";
-		cout << D;
-		cout <<  " of April \n";
+		cout << "The date is the " <<  D <<  " of April \n";
 	}
 	return 0;
 }
