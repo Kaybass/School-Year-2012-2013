@@ -1,15 +1,15 @@
-#include <iostream>
+#include <iostream> //is header
 
-using namespace std;
+using namespace std; //is namespace that is use
 
-int main(){
-	char y;
+int main(){ //is main
+	char y; //is variable
 
 	cout << "You are use russian fan\nfan have 4 speed; f, m, s, and o\nwhich be of standing for fast, medium, slow, and off\ntype one speed letter, followed by enter pressing\n";
-	while(y != 'o'){
-		cin >> y;
+	while(y != 'o'){ //is loop
+		cin >> y; //is input statement
 		
-		switch(y){
+		switch(y){ //is switch construct
 		case 'f':
 			cout << "fan go fast now, is bretty gewd\nIf want change speed fan again type one speed letter, followed by enter pressing\n";
 			break;
@@ -25,6 +25,6 @@ int main(){
 		default:
 			cout << "wrong input was done inputed\nis good idea check alchohol levels\n";
 			break;
-		}
+		} //is outside of loop
 	}
 }
