@@ -17,4 +17,5 @@ int main(){
 		cout << "\nWould you like to calculate another trip? (y/n) ";
 		cin >> d;
 	}
+	return 0;
 }
