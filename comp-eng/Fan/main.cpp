@@ -27,4 +27,5 @@ int main(){ //is main
 			break;
 		} //is outside of loop
 	}
+	return 0;
 }
