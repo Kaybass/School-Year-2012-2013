@@ -3,6 +3,7 @@
 using namespace std;
 
 void taxes(int income){
+    int a, b, c, d;
     if (income < 500){
         
     }
