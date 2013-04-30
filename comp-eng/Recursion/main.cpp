@@ -1,21 +1,38 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 
-int intToBinString(int a){
-    int b;
+
+std::string toString(int a);
+
+std::string intToBin(int a);
+
+std::string reverseString(std::string s);
+
+int main(){
+    int g;
+    std::cout << "Input a integer to be converted to binary: ";
+    std::cin  >> g;
+    std::cout << reverseString(intToBin(g)) << "\n";
+}
+
+std::string toString(int a){
+    std::stringstream ss;
+    ss << a;
+    return ss.str();
+}
+
+std::string intToBin(int a){
     if (a <= 1){
-        std::cout << a;
-        return 0;
+        return toString(a);
     }
     else{
-        b = a % 2;
+        int b = a % 2;
         a = a / 2;
-        std::cout << b;
-        return 0 + intToBinString(a);
+        return toString(b) + intToBin(a);
     }
 }
 
-int main(){
-    int g = 100;
-    intToBinString(100);
-    std::cout << "\n";
+std::string reverseString(std::string s){
+    return std::string ( s.rbegin(), s.rend() );
 }
