@@ -11,7 +11,7 @@ std::string reverseString(std::string s);
 
 int main(){
     int g;
-    std::cout << "Input a integer to be converted to binary: ";
+    std::cout << "Input an integer to be converted to binary: ";
     std::cin  >> g;
     std::cout << reverseString(intToBin(g)) << "\n";
 }
