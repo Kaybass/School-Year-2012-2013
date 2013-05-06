@@ -37,9 +37,11 @@ void taxes(double income){
 int main(){
     char worker;
     double wage, sales, hours, wnum, bnum, tnum, workerhours = 40, managerhours = 35;
-    cout << "Payroll Calculator:\nType a one of the following letters followed by pressing enter\nManager salary = m\nHourly worker salary = h\nCommision worker salary = c\nPieceworker salary = p\n\n";
+    
     
     while(worker != 'q'){
+        
+        cout << "\n\nPayroll Calculator:\nType a one of the following letters followed by pressing enter\nManager salary = m\nHourly worker salary = h\nCommision worker salary = c\nPieceworker salary = p\n\n";
         
         cin >> worker;
         
