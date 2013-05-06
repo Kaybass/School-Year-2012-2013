@@ -7,7 +7,7 @@ std::string toString(int a);
 
 std::string intToBin(int a);
 
-std::string reverseString(std::string s);
+//std::string reverseString(std::string s);
 
 int main(){
     int g;
@@ -29,10 +29,10 @@ std::string intToBin(int a){
     else{
         int b = a % 2;
         a = a / 2;
-        return toString(b) + intToBin(a);
+        return intToBin(a) + toString(b);
     }
 }
 
-std::string reverseString(std::string s){
-    return std::string ( s.rbegin(), s.rend() );
-}
+//std::string reverseString(std::string s){
+//    return std::string ( s.rbegin(), s.rend() );
+//}
