@@ -13,7 +13,7 @@ int main(){
     int g;
     std::cout << "Input an integer to be converted to binary: ";
     std::cin  >> g;
-    std::cout << reverseString(intToBin(g)) << "\n";
+    std::cout << intToBin(g) << "\n";
 }
 
 std::string toString(int a){
